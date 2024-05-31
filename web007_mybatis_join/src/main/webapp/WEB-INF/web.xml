@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+
+
+<!-- 
+	welcome page 
+	http://localhost:8080/web007_mybatis_join/
+	처럼 뒤에 슬러시만 붙여도 화면 나옴
+-->
+
+<welcome-file-list>
+	<welcome-file>/WEB-INF/views/index.jsp</welcome-file>
+</welcome-file-list>
+
+
+<servlet>
+	<servlet-name>join</servlet-name>
+	<servlet-class>com.min.edu.ctrl.MyBatisJoinController</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>join</servlet-name>
+	<url-pattern>/joinController.mybatis</url-pattern>
+</servlet-mapping>
+</web-app>
